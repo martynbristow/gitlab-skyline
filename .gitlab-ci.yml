@@ -14,7 +14,7 @@ stages:
   tags:
     - docker
 
-build:web:
+build:
   <<: *docker
   script:
     - docker build -t ${CI_REGISTRY_IMAGE} -f Dockerfile  .
